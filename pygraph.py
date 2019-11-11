@@ -56,24 +56,24 @@ class graph(object):
     for x in range(1, 12):
       self.addnode(x)
 
-    self.addegde(1, 2, 5);
-    self.addegde(1, 3, 10);
-    self.addegde(2, 4, 15);
-    self.addegde(3, 5, 15);
-    self.addegde(3, 8, 5);
-    self.addegde(4, 5, 25);
-    self.addegde(4, 6, 10);
-    self.addegde(4, 7, 30);
-    self.addegde(5, 2, 20);
-    self.addegde(5, 7, 10);
-    self.addegde(6, 9, 5);
-    self.addegde(6, 11, 15);
-    self.addegde(7, 10, 15);
-    self.addegde(8, 5, 15);
-    self.addegde(8, 10, 20);
-    self.addegde(9, 7, 15);
-    self.addegde(9, 11, 20);
-    self.addegde(10, 11, 40);
+    self.addedge(1, 2, 5);
+    self.addedge(1, 3, 10);
+    self.addedge(2, 4, 15);
+    self.addedge(3, 5, 15);
+    self.addedge(3, 8, 5);
+    self.addedge(4, 5, 25);
+    self.addedge(4, 6, 10);
+    self.addedge(4, 7, 30);
+    self.addedge(5, 2, 20);
+    self.addedge(5, 7, 10);
+    self.addedge(6, 9, 5);
+    self.addedge(6, 11, 15);
+    self.addedge(7, 10, 15);
+    self.addedge(8, 5, 15);
+    self.addedge(8, 10, 20);
+    self.addedge(9, 7, 15);
+    self.addedge(9, 11, 20);
+    self.addedge(10, 11, 40);
 
     #self.dfs(1)
     #self.bfs(1)
@@ -130,7 +130,7 @@ class graph(object):
         return True
     return False
 
-  def addegde(self, id1, id2, w):
+  def addedge(self, id1, id2, w):
 
     n1 = self.findnode(id1)
     n2 = self.findnode(id2)
