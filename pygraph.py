@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 #import copy
 #th2.additem(copy.deepcopy(ni))
